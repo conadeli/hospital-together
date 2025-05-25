@@ -4,23 +4,23 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialSection = () => {
   const testimonials = [
     {
-      name: '김지수',
+      name: '김복남',
       position: '정기 이용 고객',
-      image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150',
+      image: '/re1.jpg?auto=compress&cs=tinysrgb&w=150',
       quote: '투석 치료를 받으면서 정기적으로 병원을 방문해야 하는데, 건강한학교 매니저님의 도움으로 훨씬 편하게 다니고 있습니다. 전문적인 지식으로 의료진과의 소통도 원활하게 도와주셔서 감사합니다.',
       rating: 5,
     },
     {
       name: '박현우',
       position: '암환자 가족',
-      image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150',
+      image: '/re2.jpg?auto=compress&cs=tinysrgb&w=150',
       quote: '어머니의 암 치료 과정에서 병원동행서비스를 이용했습니다. 바쁜 일정으로 항상 함께하지 못했는데, 매니저님께서 세심하게 케어해주셔서 안심할 수 있었습니다. 정말 큰 도움이 되었습니다.',
       rating: 5,
     },
     {
       name: '이미란',
       position: '고객',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
+      image: '/re3.jpeg?auto=compress&cs=tinysrgb&w=150',
       quote: '지방에 살고 있어서 서울의 큰 병원에 갈 때마다 걱정이 많았는데, 스페셜 서비스로 기차역 픽업부터 병원 동행까지 모든 과정을 도와주셔서 정말 편했습니다.',
       rating: 5,
     },
