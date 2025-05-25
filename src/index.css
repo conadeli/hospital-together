@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  body {
+    @apply text-gray-800 bg-gradient-radial from-white via-primary-50/30 to-secondary-50/30;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn {
+    @apply px-6 py-2.5 font-medium text-sm rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-sm hover:shadow;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white focus:ring-secondary-500;
+  }
+  
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white focus:ring-accent-400;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 hover:bg-gray-50 text-gray-700 focus:ring-primary-500 hover:border-primary-500 hover:text-primary-600;
+  }
+  
+  .card {
+    @apply bg-white/90 backdrop-blur-sm rounded-lg shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary-600 to-primary-700 text-transparent bg-clip-text;
+  }
+  
+  .subtitle {
+    @apply text-lg md:text-xl text-gray-600 max-w-3xl mx-auto text-center md:text-center mb-12 leading-relaxed;
+  }
+
+  .text-content {
+    @apply text-base md:text-lg text-gray-600 leading-relaxed text-left md:text-left;
+  }
+
+  .nav-link {
+    @apply px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors duration-200 rounded-md hover:bg-primary-50;
+  }
+
+  .mobile-nav-link {
+    @apply px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors duration-200 rounded-md hover:bg-primary-50 w-full text-center;
+  }
+
+  .feature-card {
+    @apply p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .feature-title {
+    @apply text-xl font-bold mb-3 text-gray-800;
+  }
+
+  .feature-description {
+    @apply text-base md:text-lg text-gray-600 leading-relaxed;
+  }
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+}
