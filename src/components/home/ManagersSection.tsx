@@ -22,7 +22,7 @@ const ManagersSection = () => {
             viewport={{ once: true, margin: "-100px" }}
           >
             <img
-              src="https://images.pexels.com/photos/5214958/pexels-photo-5214958.jpeg"
+              src="/hostoge1.jpg"
               alt="전문 병원 동행 매니저"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
