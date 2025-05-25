@@ -68,7 +68,7 @@ const HeroSection = () => {
             className="hidden md:block"
           >
             <img 
-              src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg" 
+              src="/hostoge.jpg" 
               alt="병원 동행 서비스" 
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
