@@ -20,7 +20,7 @@ const TestimonialSection = () => {
     {
       name: '이미란',
       position: '고객',
-      image: '/re3.jpeg?auto=compress&cs=tinysrgb&w=150',
+      image: '/re3.jpg?auto=compress&cs=tinysrgb&w=150',
       quote: '지방에 살고 있어서 서울의 큰 병원에 갈 때마다 걱정이 많았는데, 스페셜 서비스로 기차역 픽업부터 병원 동행까지 모든 과정을 도와주셔서 정말 편했습니다.',
       rating: 5,
     },
