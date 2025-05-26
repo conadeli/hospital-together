@@ -3,7 +3,7 @@ import { Phone, MessageSquare } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // Google Apps Script Web App URL (배포된 웹앱 URL로 교체)
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx8u_B68DFcaaMdBwKvqKoddv9hk6dEizX5YaMb3A0sH_IoJJVAQZEyZOQ61Yr9PzAipw/exec';
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwZHIelq_KciH3WtT8_WPZ8wAH6HgQae67Gx5PxjvSKa8CE1ae9aHkoD7JE84JFNQf03A/exec';
 
 const ContactSection: React.FC = () => {
   const [showPhonePopup, setShowPhonePopup] = useState(false);
