@@ -8,12 +8,34 @@ const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzN8rCAHbMb-tWLuP7Q
 const ContactSection: React.FC = () => {
   const [showPhonePopup, setShowPhonePopup] = useState(false);
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      const res = await fetch(WEB_APP_URL, {
+        method: 'POST',
+        body: data,
+      });
+      const json = await res.json();
+      if (json.status === 'OK') {
+        alert('상담 요청이 성공적으로 접수되었습니다! 빠른 시일 내에 연락드리겠습니다.');
+        form.reset();
+      } else {
+        alert('상담 요청 전송에 실패했습니다. 잠시 후 다시 시도해주세요.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('네트워크 오류가 발생했습니다. 인터넷 연결을 확인한 후 다시 시도해주세요.');
+    }
+  };
+
   return (
     <section id="contact" className="bg-white p-8 rounded-lg shadow-md">
       <div className="max-w-xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6">상담 요청하기</h2>
-        {/* action과 method만 설정하여 폼 제출 시 Apps Script로 POST */}
-        <form action={WEB_APP_URL} method="POST" className="space-y-6">
+        {/* onSubmit으로 JS fetch 처리하여 페이지 리로드 없이 알림창 표시 */}
+        <form onSubmit={handleSubmit} className="space-y-6">
           {/* 그리드 레이아웃: 이름, 연락처, 날짜, 시간 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
