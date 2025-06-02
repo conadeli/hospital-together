@@ -87,13 +87,18 @@ const ServicesSection = () => {
         </motion.div>
 
         <div className="mt-12 text-center">
-          <Link 
-            to="/services" 
-            className="btn btn-primary inline-flex items-center"
-          >
-            자세히 알아보기
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
+        <button
+  onClick={() => {
+    const el = document.getElementById('about');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+  className="btn btn-primary inline-flex items-center"
+>
+  자세히 알아보기
+  <ArrowRight className="ml-2 h-4 w-4" />
+</button>
         </div>
       </div>
     </section>
