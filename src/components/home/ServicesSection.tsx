@@ -96,7 +96,7 @@ const ServicesSection = () => {
   }}
   className="btn btn-primary inline-flex items-center"
 >
-  자세히 알아보기
+  추천매니저 특징
   <ArrowRight className="ml-2 h-4 w-4" />
 </button>
         </div>
